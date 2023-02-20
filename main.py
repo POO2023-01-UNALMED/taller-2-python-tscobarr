@@ -20,7 +20,7 @@ class Auto:
 
     def cantidadAsientos(self):
         asientos = 0;
-        for i in range (self.asientos):
+        for i in range (len(self.asientos)):
             if i != None:
                 asientos += 1
         return asientos
@@ -29,7 +29,7 @@ class Auto:
         if self.motor.registro != self.registro:
             return 'Las piezas no son originales'
 
-        for j in range (self.asientos):
+        for j in range (len(self.asientos)):
             if j != None:
                 if j.registro != self.registro:
                     return 'Las piezas no son originales'
